@@ -1,0 +1,293 @@
+1. split --- output will be in Array
+2. includes
+3. comparision operator
+
+
+// SPLIT:
+// string_variable('substring')
+// substring will not be in the output
+
+a = 'I love volley vall'
+a.split('v')
+// ['I lo','e ','olley ','all']
+
+a = 'I love volley vall'
+a.split('')
+
+a = 'I love volley vall'
+
+
+'Ilovevolleyvall'
+
+INCLUEDS:
+1. output will be in Boolean
+2. if the element present output will be true
+3. if the element not present output will be false
+
+a = 'I love volley vall'
+a.includes(5) // false
+a.includes('v') // true
+
+
+comparision operator:
+1. output will be in Boolean
+
+
+>, <, >=, <=, !=, ==, ===
+
+26!=26
+
+
+ARRAY:
+// 1. hetrogeneous datatype
+
+a = [1,1,23,3,4,5,6,'1',[3,4,5],true,'adsf',[1,23,4]]
+
+a =[1,1,23,'magesh']
+a.join('$')
+
+// 1. output always will be a String
+
+a = [1,1,23,3,4,5]
+a.push('a')
+a.pop()
+// slice
+// splice --- check by yourself
+
+
+// CONDITIONS:
+
+// false , 0 , undefined , null , NaN , ''  => false condition
+
+// 1. if the condition is true if block will get executed or else block will be executed
+
+syntax:
+
+if (condition){
+    statement
+}
+else{
+    statement
+}
+
+
+if(10%2){
+    console.log(1);
+}
+else{
+    console.log(2);
+}
+
+a = 10
+b = 5
+c = 15
+if(c%b){
+    console.log(1);
+}
+else if(b*10){
+    console.log(21);
+}
+else if(a<c){
+    console.log(2);
+}
+else if(true){
+    console.log(3);
+}
+else if(false){
+    console.log(3);
+}
+else{
+    console.log(4);
+}
+if(b){
+    console.log(5);
+}
+else if(true){
+    console.log(6);
+}
+if(b>c){
+    console.log(7);
+}
+else if(b!=0){
+    console.log(8);
+}
+else{
+    console.log(9);
+}
+
+a = 0
+b = 5
+c = 15
+if(a*7 == 0){
+    console.log(1);
+}
+else if(b*10){
+    console.log(2);
+}
+else{
+    console.log(3);
+}
+if(a>b){
+    console.log(4);
+}else if(c<b){
+    console.log(5);
+}
+
+1. for loop
+2. while loop
+3. XML http
+
+
+styntax:
+
+start, termination condition , incremnent / decrement
+
+for(i=0;i<5;i++){
+    console.log(i);
+}
+
+a = 'magesh'
+
+// sol1
+vowels = 'aeiou'
+for(i=0;i<a.length;i++){
+    if(a[i]!='a' && a[i]!='e' && a[i]!='i' && a[i]!='o' && a[i]!='u'){
+        console.log(a[i]);
+    }
+    
+}
+
+// sol2
+vowels = 'aeiou'
+for(i=0;i<a.length;i++){
+    if(!vowels.includes(a[i])){
+        console.log(a[i]);
+    }
+    
+}
+
+
+
+// ! - not
+// change false to true and true to false
+
+if(!5){
+    console.log(1)
+}
+if(!0){
+    console.log(1)
+}
+
+n = 5
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+
+for(i=1;i<=n;i++){
+    console.log('*'.repeat(i));
+}
+
+a = [1,2,3,4,5]
+
+
+n = 5
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+a = [1,2,3,4,5]
+for(let i of a){
+    console.log(i)
+}
+
+a = [1,2,3,4,5]
+b = '67892'
+
+
+6
+14
+24
+36
+10
+
+WHILE LOOP:
+
+// declare condition
+// while(condition check){
+//     condition change
+//     statement
+//     condition change
+// }
+
+a = [1,2,3,4,5]
+n = 1
+while(n<=5){
+    console.log(n);
+    n++
+}
+
+a = [1,2,3,4,5]
+m = 0
+while(m<a.length){
+    console.log(a[m])
+    m++  //m = m+1 // m++
+}
+console.log(m);
+
+can be used inside the loops
+1. continue      - skip that particular iteration / anything below to continue will not be executed for that iteration
+1. break         - break / terminate that nearest loop
+
+
+a = 'magesh'
+for(let i of a){
+    if(i == 'g'){
+        continue
+    }
+    console.log(i);
+}
+
+
+a = [1,2,3,4,5]
+for(let i of a){
+    console.log(i);
+    if(i%2==0){
+        continue
+    }
+}
+
+a = [1,2,3,4,5]
+for(let i of a){
+    if(i%2==0){
+        continue
+    }
+    console.log(i);
+}
+
+
+a = [1,2,3,4,5]
+for(let i of a){
+    if(i%2==0){
+        break
+        
+    }
+    console.log(i);
+}
+
+
+a = [1,2,3,4,5]
+for(let i of a){
+    console.log(i);
+    if(i%2==1){
+        break
+    }
+}
+
+// 1. math
+// 2. Object
+// 3. functions
